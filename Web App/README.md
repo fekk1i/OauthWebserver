@@ -10,7 +10,7 @@ This project consists of a web shopping app that integrates with the OAuth serve
 ## Installation
 
 1. Clone the repository:
-git clone [https://github.com/fekk1i/Loginwebapp](https://github.com/fekk1i/OauthWebserver/)
+git clone (https://github.com/fekk1i/OauthWebserver/)
 cd <repository_directory>
 
 
