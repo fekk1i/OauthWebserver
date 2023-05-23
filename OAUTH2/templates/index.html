@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form action="{{ url_for('login') }}" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" required>
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required>
+        <br><br>
+        <input type="submit" value="Login">
+    </form>
+    <br>
+    <h1>Register</h1>
+    <form action="{{ url_for('register') }}" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required>
+        <br><br>
+        <input type="submit" value="Register">
+    </form>
+    <br>
+    <h1>Lookup Client ID and Secret ID</h1>
+    <form action="{{ url_for('lookup') }}" method="POST">
+        <label for="lookup_username">Username:</label>
+        <input type="text" name="lookup_username" id="lookup_username" required>
+        <br><br>
+        <label for="lookup_password">Password:</label>
+        <input type="password" name="lookup_password" id="lookup_password" required>
+        <br><br>
+        <input type="submit" value="Lookup">
+    </form>
+    {% if lookup_result %}
+        <h2>Client ID: {{ lookup_result.client_id }}</h2>
+        <h2>Secret ID: {{ lookup_result.secret_id }}</h2>
+    {% endif %}
+</body>
+</html>

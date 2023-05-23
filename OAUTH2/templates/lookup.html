@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Client ID and Secret ID Lookup</title>
+</head>
+<body>
+    <h1>Client ID and Secret ID Lookup</h1>
+    <form method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="Lookup">
+    </form>
+
+    {% if client_id and secret_id %}
+    <h2>Client ID: {{ client_id }}</h2>
+    <h2>Secret ID: {{ secret_id }}</h2>
+    {% endif %}
+</body>
+</html>
