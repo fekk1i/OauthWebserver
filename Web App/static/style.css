@@ -1,0 +1,137 @@
+body {
+  background-color: #15202b;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form button {
+  width: 200px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #ffffff;
+  color: #15202b;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  color: #15202b;
+}
+
+.normal-login-button {
+  background-color: #87CEEB;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.normal-login-button:hover {
+  filter: brightness(1.2);
+  cursor: pointer;
+}
+
+.discord-login {
+  margin-top: 10px;
+}
+
+.discord-button {
+  display: inline-block;
+  background-color: #7289DA;
+  background-image: linear-gradient(#7289DA, #677BC4);
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: filter 0.3s ease;
+}
+
+.discord-button:hover {
+  filter: brightness(1.2);
+  cursor: pointer;
+}
+
+.github-button {
+  display: inline-block;
+  background-color: #24292e;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: filter 0.3s ease;
+}
+
+.github-button:hover {
+  filter: brightness(1.2);
+  cursor: pointer;
+}
+
+.navbar {
+  background-color: #15202b;
+  padding: 10px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul li {
+  margin-right: 10px;
+}
+
+.navbar ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.content {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.about-page {
+  background-color: #1a2938;
+  padding: 20px;
+  color: #ffffff;
+}
+
+.contact-page {
+  background-color: #1a2938;
+  padding: 20px;
+  color: #ffffff;
+}
+
+.welcome-message {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.logged-in-user {
+  font-weight: bold;
+}

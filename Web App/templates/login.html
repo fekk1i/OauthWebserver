@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="top-section">
+        {% if logged_in_user %}
+            <p>Logged in as: {{ logged_in_user }}</p>
+            <a href="/logout" class="logout-button">Logout</a>
+        {% endif %}
+    </div>
+
+    <div class="container">
+        <div class="login-form">
+            <a href="{{ alielfekki_authorization_url }}" class="alielfekki-button">Login with Alielfekki</a>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
